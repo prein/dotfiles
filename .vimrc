@@ -9,6 +9,7 @@ Plugin 'wakatime/vim-wakatime'
 Bundle 'scrooloose/syntastic'
 "Bundle 'nanotech/jellybeans.vim'
 Bundle 'dougireton/vim-chef'
+Plugin 'codota/tabnine-vim'
 
 call vundle#end()
 filetype plugin indent on
@@ -53,6 +54,7 @@ let g:syntastic_check_on_wq = 0
 let g:syntastic_ruby_checkers = ['rubocop', 'mri']
 let g:syntastic_chef_checkers = ['foodcritic']
 let g:syntastic_json_checkers = ['jsonlint']
+let g:syntastic_python_checkers = ['python', 'pylint', 'pycodestyle', 'pep8']
 
 " readable colorscheme for vimdiff
 if &diff

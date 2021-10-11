@@ -22,6 +22,9 @@ export PROMPT_COMMAND='history -a'
 HISTSIZE=100000
 HISTFILESIZE=200000
 
+# timestamps in history
+HISTTIMEFORMAT="%d/%m/%y %T "
+
 # check the window size after each command and, if necessary,
 # update the values of LINES and COLUMNS.
 shopt -s checkwinsize
@@ -131,3 +134,15 @@ eval "$(thefuck --alias)"
 
 # The next lines enable bash completion for scalr-ctl.
 eval "$(_SCALR_CTL_COMPLETE=source scalr-ctl)"
+
+source <(kubectl completion bash)
+source <(helm completion bash)
+
+# mouse acceleration
+xset m 7 1
+
+# TFENV
+export PATH="$HOME/.tfenv/bin:$PATH"
+
+# GO
+export GOPATH="/home/pawel/other/code/go/"

@@ -1,0 +1,13 @@
+[user]
+  email = # FIXME
+	name = # FIXME
+[credential]
+	helper = cache
+[diff]
+	tool = vimdiff
+[difftool "spruce"]
+	cmd = spruce diff $LOCAL $REMOTE
+[difftool]
+	prompt = false
+[difftool "vimdiff"]
+	cmd = vimdiff $LOCAL $REMOTE
